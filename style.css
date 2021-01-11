@@ -1,21 +1,20 @@
 body {
 	font-size: 14px;
-	font-family: 'Archivo Narrow', sans-serif;
+	font-family: 'Archivo', sans-serif;
 	background-color: #f2f2f2;
 	padding-left: 3rem;
 	padding-right: 3rem;
+	margin: 0px;
 }
 
 #main-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 2rem;
+	padding-top: 1rem;
 	padding-left: 10px;
 	padding-right: 10px;
-	width: 100%;
 	height: 80px;
-	box-sizing: border-box;
 }
 
 img.header_logo {
@@ -27,36 +26,53 @@ img.header_logo {
 }
 
 .list_pages {
-	position: relative;
+	margin: 0px;
+	padding: 0px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
     justify-content: space-evenly;
-	font-size: 1.2rem;
+	font-size: 16px;
 	list-style: none;
 }
 
+.header_search {
+	font-size: 8px;
+}
+
 #main-content {
-	padding-top: 3rem;
+	padding-top: 2rem;
 }
 
 .news_top {
 	display: flex;
+	padding-bottom: 40px;
+}
+
+h3.topic_article {
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 14px;
+	margin: 0px;
+	padding-top: 10px;
+	color: #0b3d91;
+}
+
+h2.title_article {
+	margin: 0px;
+	padding-top: 10px;
+	font-size: 18px;
+	line-height: 22px;
+	padding-right: 0.2rem;
+}
+
+h2.title_primary {
+	font-size: 32px;
+	line-height: 2.6rem;
+	padding-right: 5rem;
 }
 
 .news_top_left {
-	width: 60%;
-	position: sticky;
-}
-
-img.news_primary {
-	width: 100%;
-}
-
-.news_top_right {
-	display: flex;
-	width: 40%;
-	float: right;
+	width: 70%;
 }
 
 .article_primary {
@@ -64,34 +80,75 @@ img.news_primary {
 	padding-right: 10px;
 }
 
+img.news_primary {
+	width: 100%;
+}
+
+.news_top_right {
+	width: 30%;
+}
+
+/*Questa classe serve nel caso alla fine decidiamo di utilizzare
+un'impostazione diversa, con più di un articolo nella colonna di destra*/
+.row {
+	width: 100%;
+	display: flex;
+}
+
 .article_secondary {
+	width: 100%;
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-bottom: 30px;
 }
 
 img.news_secondary {
 	width: 100%;
 }
 
-.banner_topicspadding {
-	padding-left: 10px;
-	padding-right: 10px;
+.topics_banner {
+	margin: 10px;
+	border-top: 1.5px solid black;
+	border-bottom: 1.5px solid black;
+	padding-top: 30px;
+	padding-bottom: 45px;
+	padding-left: 5px;
+	font-size: 1.4rem;
+	/*	background-color: #fc3d21;*/
 }
 
-.banner_topics {
-	height: 200px;
-	background-color: purple;
-	align-content: center;
-	align-items: center;
-	text-align: center;
-}
-
-.list_topics {
-	width: 90%;
+.topics_list {
+	padding-left: 0px;
 	display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    align-items: center;
     list-style: none;
 }
+
+.topics_explore {
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 1.3rem;
+	color: #0b3d91;
+	padding-right: 20px;
+}
+
+.news-bottom {
+	padding-top: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
