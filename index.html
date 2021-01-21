@@ -5,24 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NASA</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header id="main-header">
         <div class="header_logo">
+            <a href="index.html">
             <img class="header_logo" src="content/nasa-logo.svg">
+            </a>
         </div>
-        <div class="header_pages">
+        <nav class="header_pages">
             <ul class="list_pages">
-            <li>Topics</li>
-            <li>Galleries</li>
-            <li>Contact Us</li>
-            <li>Education</li>
+                <div class="nav_topics">
+                    <li class="nav_topics_toggle"><a href="">Topics</a></li>
+                    <!-- <div class="nav_topics_dropdown">
+                        <a href="">Link 1</a>
+                        <a href="">Link 2</a>
+                        <a href="">Link 3</a>
+                    </div> -->
+                </div>
+                <li><a href="">Galleries</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Education</a></li>
             </ul>
-        </div>
+        </nav>
         <div class="header_search">
             <h1 class="search">Search</h1>    
         </div>
@@ -31,23 +37,23 @@
         <div class="news_top">
              <div class="news_top_left">
                 <div class="article_primary">
-                    <img class="news_primary" src="content/gal.jpg">
-                    <h3 class="topic_article">Missions</h3>
-                    <h2 class="title_article title_primary">SpaceX Dragon Capsule to Make First of Its Kind Science Splashdown</h2>
+                    <div class="article_primary_image"><a href="article.html"><img class="img_primary" src="content/art1.jpg"></div></a>
+                    <h3 class="topic_article primary"><a class="topic_article" href="categories.html">&#9679; MISSIONS</a></h3>
+                    <h2 class="title_article title_primary"><a href="article.html">SpaceX Dragon Capsule to Make First of Its Kind Science Splashdown</a></h2>
                 </div>
              </div>
              <div class="news_top_right">
                 <div class="row">
-                    <div class="article_secondary">
-                        <img class="news_secondary" src="content/gal.jpg">
-                        <h3 class="topic_article">Space</h3>
+                    <div class="article_secondary top_right">
+                        <div class="article_secondary_image"><img class="img_secondary" src="content/gal.jpg"></div>
+                        <h3 class="topic_article">&#9679; SPACE</h3>
                         <h2 class="title_article">NASA Extends Exploration for Two Planetary Science Missions</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="article_secondary">
-                        <img class="news_secondary" src="content/gal.jpg">
-                        <h3 class="topic_article">Space</h3>
+                    <div class="article_secondary top_right">
+                        <div class="article_secondary_image"><img class="img_secondary" src="content/gal.jpg"></div>
+                        <h3 class="topic_article">&#9679; SPACE</h3>
                         <h2 class="title_article">Hubble Views a Dazzling ‘Fireworks Galaxy’</h2>
                     </div>
                 </div>
@@ -69,42 +75,65 @@
         <div class="news-bottom">
             <div class="row">
                 <div class="article_secondary">
-                    <img class="news_secondary" src="content/gal.jpg">
-                    <h3 class="topic_article">Space</h3>
+                    <div class="article_secondary_image"><img class="img_secondary" src="content/gal.jpg"></div>
+                    <h3 class="topic_article">&#9679; SPACE</h3>
                     <h2 class="title_article">NASA Extends Exploration for Two Planetary Science Missions</h2>
                 </div>
                 <div class="article_secondary">
-                    <img class="news_secondary" src="content/gal.jpg">
-                    <h3 class="topic_article">Space</h3>
+                    <div class="article_secondary_image"><img class="img_secondary" src="content/gal.jpg"></div>
+                    <h3 class="topic_article">&#9679; SPACE</h3>
                     <h2 class="title_article">NASA Extends Exploration for Two Planetary Science Missions</h2>
                 </div>
                 <div class="article_secondary">
-                    <img class="news_secondary" src="content/gal.jpg">
-                    <h3 class="topic_article">Space</h3>
+                    <div class="article_secondary_image"><img class="img_secondary" src="content/gal.jpg"></div>
+                    <h3 class="topic_article">&#9679; SPACE</h3>
                     <h2 class="title_article">NASA Extends Exploration for Two Planetary Science Missions</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="article_secondary">
-                    <img class="news_secondary" src="content/gal.jpg">
-                    <h3 class="topic_article">Space</h3>
+                    <div class="article_secondary_image"><img class="img_secondary" src="content/gal.jpg"></div>
+                    <h3 class="topic_article">&#9679; SPACE</h3>
                     <h2 class="title_article">NASA Extends Exploration for Two Planetary Science Missions</h2>
                 </div>
                 <div class="article_secondary">
-                    <img class="news_secondary" src="content/gal.jpg">
-                    <h3 class="topic_article">Space</h3>
+                    <div class="article_secondary_image"><img class="img_secondary" src="content/gal.jpg"></div>
+                    <h3 class="topic_article">&#9679; SPACE</h3>
                     <h2 class="title_article">NASA Extends Exploration for Two Planetary Science Missions</h2>
                 </div>
                 <div class="article_secondary">
-                    <img class="news_secondary" src="content/gal.jpg">
-                    <h3 class="topic_article">Space</h3>
+                    <div class="article_secondary_image"><img class="img_secondary" src="content/gal.jpg"></div>
+                    <h3 class="topic_article">&#9679; SPACE</h3>
                     <h2 class="title_article">NASA Extends Exploration for Two Planetary Science Missions</h2>
                 </div>
             </div>
         </div>
     </div>
     <footer id="main-footer">
-        
+        <div class="footer_logo">
+            <img class="footer_logo" src="content/nasa-logo.svg">
+            <p class="nasa_description">National Aeronautics and Space Administration<br />NASA Official: Brian Dunbar</p>
+        </div>
+        <div class="footer_links">
+            <ul class="links_social">
+                <div class="links_title">Social</div>
+                <div class="links_social"><a class="footer_links" href="">Twitter</a></div>
+                <div class="links_social"><a class="footer_links" href="">Facebook</a></div>
+                <div class="links_social"><a class="footer_links" href="">Instagram</a></div>
+            </ul>
+            <ul class="links_contacts">
+                <div class="links_title">Contacts</div>
+                <div class="links_contacts"><a class="footer_links" href="">Media</a></div>
+                <div class="links_contacts"><a class="footer_links" href="">Researchers</a></div>
+                <div class="links_contacts"><a class="footer_links" href="">Educators</a></div>
+            </ul>
+            <ul class="links_links">
+                <div class="links_title">Links</div>
+                <div class="links_links"><a class="footer_links" href="">About Us</a></div>
+                <div class="links_links"><a class="footer_links" href="">Privacy</a></div>
+                <div class="links_links"><a class="footer_links" href="">Opportunities</a></div>
+            </ul>
+        </div>
     </footer>
 </body>
 
