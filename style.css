@@ -81,7 +81,8 @@ img.header_logo {
 }
 
 .header_pages {
-	width: 50%;
+	width: 60%;
+	padding-left: 7rem;
 }
 
 .list_pages {
@@ -124,8 +125,58 @@ img.header_logo {
 	display: block;
 }
 
-h1.search {
+.header_search {
+	width: 200px;
+}
+
+form.search_form {
+	position: relative;
+	margin-bottom: 0;
+}
+
+.search_input {
+	width: 100%;
+}
+
+input.search_field {
+	padding-right: 25px;
+	width:100%;
+	border: none;
+	outline: none;
+	text-align: right;
+	padding-left: 0px;
+	margin-left: 0px;
 	font-size: 16px;
+	background: none;
+}
+
+input.search_field::-webkit-search-cancel-button{
+    display: none;    
+}
+
+div.search_submit_wrapper {
+	position: absolute;
+	top: 22%;
+	right: 0;
+}
+
+input.search_submit {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 20px;
+	background: transparent;
+	border: none;
+	color: transparent;
+	cursor: pointer;
+}
+
+span.search_submit_arrow {
+	font-size: 18px;
+	position: absolute;
+	top: -2;
+	right: 0;
+	pointer-events: none;
 }
 
 #main-footer {
@@ -177,6 +228,7 @@ a.footer_links {
 .news_top {
 	display: flex;
 	padding-bottom: 40px;
+	padding-top: 20px;
 }
 
 h3.topic_article {
@@ -216,14 +268,10 @@ h2.title_primary {
 
 div.article_primary_image {
 	width: 100%;
-	height: 65%;
-	min-height: 400px;
 }
 
 img.img_primary {
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
 }
 
 .news_top_right {
@@ -246,17 +294,15 @@ un'impostazione diversa, con più di un articolo nella colonna di destra*/
 
 .article_secondary.top_right {
 	padding-bottom: 30px;
+	box-sizing: border-box;
 }
 
 div.article_secondary_image {
 	width: 100%;
-	height: 25%;
 }
 
 img.img_secondary {
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
 }
 
 .topics_banner {
@@ -361,6 +407,11 @@ div.categories_filter_related {
 
 div.categories_news {
 	width: 80%;
+}
+
+div.button_showothers {
+	text-align: center;
+	margin-bottom: 40px;
 }
 
 #article-content {
@@ -487,14 +538,14 @@ footer.article_related {
 	margin-bottom: 200px;
 }
 
-div.article_related:nth-of-type(2) {
-	margin-left: 10px;
-	margin-right: 10px;
+div.article_secondary.related {
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
-div.article_related_image {
-	width: 100%;
-	height: 220px;
+div.article_secondary.related:nth-of-type(2) {
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 

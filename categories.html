@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NASA | Earth</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,18 +12,33 @@
         <div class="header_logo">
             <a href="index.html">
             <img class="header_logo" src="content/nasa-logo.svg">
-        </a>
+            </a>
         </div>
-        <div class="header_pages">
+        <nav class="header_pages">
             <ul class="list_pages">
-            <li><a href="">Topics</a></li>
-            <li><a href="">Galleries</a></li>
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">Education</a></li>
+                <div class="nav_topics">
+                    <li class="nav_topics_toggle"><a href="">Topics</a></li>
+                    <!-- <div class="nav_topics_dropdown">
+                        <a href="">Link 1</a>
+                        <a href="">Link 2</a>
+                        <a href="">Link 3</a>
+                    </div> -->
+                </div>
+                <li><a href="">Galleries</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Education</a></li>
             </ul>
-        </div>
+        </nav>
         <div class="header_search">
-            <h1 class="search">Search</h1>    
+            <form class="search_form" action="">
+                <div class="search_input">
+                    <input class="search_field" type="search" name="s" placeholder="Search">
+                    <div class="search_submit_wrapper">
+                        <input class="search_submit" type="submit" name="sub">
+                        <span class="search_submit_arrow">→</span>
+                    </div>
+                </div>
+            </form>   
         </div>
     </header>
     <header class="categories-header">
@@ -42,71 +54,74 @@
      	<div class="categories_filter">
      		<div class="categories_filter_topics">
      			<h2 class="categories_filter_topics">Topics</h2>
-     			<h3 class="categories_filter_topics"><a href="">Space</a></h3>
-     			<h3 class="categories_filter_topics"><a href="">Missions</a></h3>
-     			<h3 class="categories_filter_topics"><a href="">Space Tech</a></h3>
-     			<h3 class="categories_filter_topics"><a href="">Mars</a></h3>
-     			<h3 class="categories_filter_topics"><a href="">Moon</a></h3>
+     			<h3 class="categories_filter_topics"><a class="topic_article" href="categories.html">Space</a></h3>
+     			<h3 class="categories_filter_topics"><a class="topic_article" href="categories.html">Missions</a></h3>
+     			<h3 class="categories_filter_topics"><a class="topic_article" href="categories.html">Space Tech</a></h3>
+     			<h3 class="categories_filter_topics"><a class="topic_article" href="categories.html">Mars</a></h3>
+     			<h3 class="categories_filter_topics"><a class="topic_article" href="categories.html">Moon</a></h3>
      		</div>
      		<div class="categories_filter_related">
      			<h2 class="categories_filter_topics">Related</h2>
-     			<h3 class="categories_filter_topics"><a href="">Oceans</a></h3>
-     			<h3 class="categories_filter_topics"><a href="">Sky</a></h3>
-     			<h3 class="categories_filter_topics"><a href="">Volcanoes</a></h3>
-     			<h3 class="categories_filter_topics"><a href="">Geology</a></h3>
+     			<h3 class="categories_filter_topics"><a class="topic_article" href="categories.html">Oceans</a></h3>
+     			<h3 class="categories_filter_topics"><a class="topic_article" href="categories.html">Sky</a></h3>
+     			<h3 class="categories_filter_topics"><a class="topic_article" href="categories.html">Volcanoes</a></h3>
+     			<h3 class="categories_filter_topics"><a class="topic_article" href="categories.html">Geology</a></h3>
      		</div>
      	</div>
      	<div class="categories_news">
      		<div class="row">
                 <div class="article_secondary">
-                    <div class="article_secondary_image"><img class="img_secondary" src="content/art1.jpg"></div>
-                    <h3 class="topic_article">&#9679; Oceans</h3>
-                    <h2 class="title_article">NASA Extends Exploration for Two Planetary Science Missions</h2>
+                    <div class="article_secondary_image"><a href="article.html"><img class="img_secondary" src="content/art10.jpg"></a></div>
+                    <h3 class="topic_article"><a class="topic_article" href="categories.html">&#9679; SPACE</a></h3>
+                    <h2 class="title_article"><a href="article.html">SAGE III Sees California Wildfire Effects in Stratosphere</a></h2>
                 </div>
                 <div class="article_secondary">
-                    <div class="article_secondary_image"><img class="img_secondary" src="content/art1.jpg"></div>
-                    <h3 class="topic_article">&#9679; Oceans</h3>
-                    <h2 class="title_article">NASA Extends Exploration for Two Planetary Science Missions</h2>
+                    <div class="article_secondary_image"><a href="article.html"><img class="img_secondary" src="content/gal3.jpg"></a></div>
+                    <h3 class="topic_article"><a class="topic_article" href="categories.html">&#9679; MISSIONS</a></h3>
+                    <h2 class="title_article"><a href="article.html">Green Run Update: Data and Inspections Indicate Core Stage in Good Condition</a></h2>
                 </div>
                 <div class="article_secondary">
-                    <div class="article_secondary_image"><img class="img_secondary" src="content/art1.jpg"></div>
-                    <h3 class="topic_article">&#9679; Sky</h3>
-                    <h2 class="title_article">NASA Extends Exploration for Two Planetary Science Missions</h2>
+                    <div class="article_secondary_image"><a href="article.html"><img class="img_secondary" src="content/art11.jpg"></a></div>
+                    <h3 class="topic_article"><a class="topic_article" href="categories.html">&#9679; AVIATION</a></h3>
+                    <h2 class="title_article"><a href="article.html">Images of MT Fuji's Missing Snow</a></h2>
                 </div>
             </div>
             <div class="row">
                 <div class="article_secondary">
-                    <div class="article_secondary_image"><img class="img_secondary" src="content/art1.jpg"></div>
-                    <h3 class="topic_article">&#9679; Geology</h3>
-                    <h2 class="title_article">NASA Extends Exploration for Two Planetary Science Missions</h2>
+                    <div class="article_secondary_image"><a href="article.html"><img class="img_secondary" src="content/art9.jpg"></a></div>
+                    <h3 class="topic_article"><a class="topic_article" href="categories.html">&#9679; HEADQUARTERS</a></h3>
+                    <h2 class="title_article"><a href="article.html">Meet the team behind Mission Artemis</a></h2>
                 </div>
                 <div class="article_secondary">
-                    <div class="article_secondary_image"><img class="img_secondary" src="content/art1.jpg"></div>
-                    <h3 class="topic_article">&#9679; Ocean</h3>
-                    <h2 class="title_article">NASA Extends Exploration for Two Planetary Science Missions</h2>
+                    <div class="article_secondary_image"><a href="article.html"><img class="img_secondary" src="content/art7.jpg"></a></div>
+                    <h3 class="topic_article"><a class="topic_article" href="categories.html">&#9679; JUPITER</a></h3>
+                    <h2 class="title_article"><a href="article.html">Hubble’s Brand New Image of Jupiter</a></h2>
                 </div>
                 <div class="article_secondary">
-                    <div class="article_secondary_image"><img class="img_secondary" src="content/art1.jpg"></div>
-                    <h3 class="topic_article">&#9679; Volcanoes</h3>
-                    <h2 class="title_article">NASA Extends Exploration for Two Planetary Science Missions</h2>
+                    <div class="article_secondary_image"><a href="article.html"><img class="img_secondary" src="content/art8.jpg"></a></div>
+                    <h3 class="topic_article"><a class="topic_article" href="categories.html">&#9679; ENVIRONMENT</a></h3>
+                    <h2 class="title_article"><a href="article.html">Animals’ Movement Patterns are Shifting in Different Ways as the Climate Changes</a></h2>
                 </div>
             </div>
             <div class="row">
                 <div class="article_secondary">
-                    <div class="article_secondary_image"><img class="img_secondary" src="content/art1.jpg"></div>
-                    <h3 class="topic_article">&#9679; Geology</h3>
-                    <h2 class="title_article">NASA Extends Exploration for Two Planetary Science Missions</h2>
+                    <div class="article_secondary_image"><a href="article.html"><img class="img_secondary" src="content/art2.jpg"></a></div>
+                    <h3 class="topic_article"><a class="topic_article" href="categories.html">&#9679; SPACE</a></h3>
+                    <h2 class="title_article"><a href="article.html">Researchers Rewind the Clock to Calculate Age and Site of Supernova Blast</a></h2>
                 </div>
                 <div class="article_secondary">
-                    <div class="article_secondary_image"><img class="img_secondary" src="content/art1.jpg"></div>
-                    <h3 class="topic_article">&#9679; Ocean</h3>
-                    <h2 class="title_article">NASA Extends Exploration for Two Planetary Science Missions</h2>
+                    <div class="article_secondary_image"><a href="article.html"><img class="img_secondary" src="content/art6.jpg"></a></div>
+                    <h3 class="topic_article"><a class="topic_article" href="categories.html">&#9679; MISSIONS</a></h3>
+                    <h2 class="title_article"><a href="article.html">Materials Science Experiments Conducted at MSFC</a></h2>
                 </div>
                 <div class="article_secondary">
-                    <div class="article_secondary_image"><img class="img_secondary" src="content/art1.jpg"></div>
-                    <h3 class="topic_article">&#9679; Volcanoes</h3>
-                    <h2 class="title_article">NASA Extends Exploration for Two Planetary Science Missions</h2>
+                    <div class="article_secondary_image"><a href="article.html"><img class="img_secondary" src="content/art5.jpg"></a></div>
+                    <h3 class="topic_article"><a class="topic_article" href="categories.html">&#9679; AVIATION</a></h3>
+                    <h2 class="title_article"><a href="article.html">NASA Marshall, SpaceX Team Celebrates Engines of Success</a></h2>
                 </div>
+            </div>
+            <div class="button_showothers">
+            	<h2><a class="topic_article" href="">Show other articles</a></h2>
             </div>
      	</div>
     </div>
